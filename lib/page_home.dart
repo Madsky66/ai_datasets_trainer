@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   final _selectedValues = List<String?>.filled(5, null);
   final _dropdownLabels = ["Sentiment :", "Emotion :", "Decision :", "Race :", "Height :"];
   final _dropdownValues = [
-    ["POSITIVE", "NEUTRAL OR POSITIVE", "NEUTRAL", "NEUTRAL OR NEGATIVE", "NEGATIVE", "NONE"],
+    ["POSITIVE", "NEUTRAL OR POSITIVE", "NEUTRAL OR NEGATIVE", "NEGATIVE", "NONE"],
     ["JOY", "PLAYFULNESS", "ENTHUSIASM", "PASSIVE", "SARCASM", "ANGER", "NONE"],
     ["ACCEPT", "HESITATE", "DECLINE", "NONE"],
     ["HUMAN", "CAT", "LION", "NONE"],
