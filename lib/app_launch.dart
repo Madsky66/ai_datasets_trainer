@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ai_datasets_trainer/page_home.dart';
 
 class AIDatasetsTrainerApp extends StatelessWidget {
-  const AIDatasetsTrainerApp({super.key});
+  const AIDatasetsTrainerApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
