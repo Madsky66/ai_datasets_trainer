@@ -88,9 +88,9 @@ class _HomePageState extends State<HomePage> {
       selectedRace = _getSelectedValue(3);
       selectedHeight = _getSelectedValue(4);
       customTags = _tagsController.text.split(',').map((tag) => tag.trim()).toList();
-      randomSentence = Future.value(alternativeSentence);
     });
     await downloadAndUpdateFTPFile(() {setState(() {_isSubmitting = false;});});
+    setState(() {randomSentence = _loadRandomSentence();});
   }
   Future<void> downloadAndUpdateFTPFile(Function onCompleted) async {
     if (alternativeSentence.isNotEmpty) {
